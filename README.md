@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ```
 
 ## Database Connectivity
-PostgreSQL is used as database and to connect it with database make changes in database.py.
+PostgreSQL is used as database and to connect it with database make changes in database.py
 `POSTGRES_URL = "postgresql://<db_user>:<db_password>@localhost/<db_name>"`
 
 ## Run the server for the app locally
