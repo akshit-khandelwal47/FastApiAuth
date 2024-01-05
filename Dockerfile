@@ -1,13 +1,13 @@
-FROM python:3.11
+FROM python
 
-WORKDIR /FastApiAuth
+WORKDIR /fastapiauth
 
 COPY ./requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY ./FastApiAuth /FastApiAuth
+COPY . /fastapiauth
 
-CMD ["uvicorn", "FastApiAuth.main:app", "--host=0.0.0.0", "--port=8000"]
+CMD ["uvicorn", "main:app", "--host","0.0.0.0", "--port=8000"]
 
 EXPOSE 8000
